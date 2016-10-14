@@ -50,12 +50,12 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="RevrotTests.cs" />
     <Compile Include="DisemvowelTests.cs" />
     <Compile Include="DuplicateEncodeTests.cs" />
     <Compile Include="IsSquareTests.cs" />
     <Compile Include="LeetSpeekTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TortoiseTests.cs" />
     <Compile Include="WhoIsNext.cs" />
   </ItemGroup>
   <ItemGroup>

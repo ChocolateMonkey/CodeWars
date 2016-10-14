@@ -6,17 +6,16 @@ namespace Katas
     {
         public static int[] Race(int v1, int v2, int g)
         {
-            if (v1 > v2)
+            if (v1 >= v2)
             {
-                return new[] {-1, -1, -1};
+                return null;
             }
 
-            var v1g = g/v1;
+            var vDiff = v2 - v1;
 
-            var v2g = v2*v1g;
+            var timeToMeet = TimeSpan.FromHours((double)g/vDiff);
 
-            
-            return new [] {0,32,18};
+            return new [] {timeToMeet.Hours,timeToMeet.Minutes,timeToMeet.Seconds};
         }
     }
 }
